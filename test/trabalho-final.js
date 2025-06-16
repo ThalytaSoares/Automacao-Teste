@@ -1,4 +1,5 @@
 import assert from 'node:assert';
+import { test, expect } from '@playwright/test';
 
 import {
   geradorDeTagsDeIdentificacao,
@@ -8,7 +9,7 @@ import {
   buscarDadoAsync
 } from '../test/trabalho.test.js';
 
-describe('Testes da disciplina - fundamentos JS', () => {
+test('trabalho', async ({}) => {
   
   it('QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas', () => {
     assert.strictEqual(geradorDeTagsDeIdentificacao('Pantera'), 'PANTERA');
