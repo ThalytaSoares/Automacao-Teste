@@ -2,9 +2,11 @@
   "name": "nome-do-projeto",
   "version": "1.0.0",
   "type": "module",
-
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "playwright": "^1.53.0"
   }
 }
-
