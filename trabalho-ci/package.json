@@ -1,12 +1,13 @@
 {
-  "name": "nome-do-projeto",
+  "name": "trabalho-ci",
   "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "test": "mocha",
-    "e2e": "playwright test"
-  },
+  "main": "index.js",
+  "license": "MIT",
   "devDependencies": {
-    "playwright": "^1.53.0"
-  }
+    "@playwright/test": "^1.53.0"
+  },
+  "scripts": {
+  "e2e": "playwright test"
+}
+
 }
