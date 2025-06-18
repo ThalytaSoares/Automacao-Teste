@@ -9,7 +9,7 @@ on:
 
 # Trabalhos/tarefas dentro do 'pipeline'
 jobs:
-  test-e2e:
+  e2e-test:
     # Máquina onde o job será executado
     runs-on: ubuntu-latest
 
@@ -33,7 +33,7 @@ jobs:
 
       # Instalação do Playwright
       - name: Instalando Playwright
-        run: yarn playwright install
+        run: npx playwright install --with-deps
 
       # Execução dos testes E2E
       - name: Executando testes E2E

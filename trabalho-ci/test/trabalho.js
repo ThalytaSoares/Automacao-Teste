@@ -5,7 +5,7 @@ export function geradorDeTagsDeIdentificacao(nome) {
 }
 
 export function verificarSePodeSerAdotado(idade, porte) {
-  return idade === 1 && porte === 'M';
+  return idade >= 1 && porte === 'M';
 }
 
 export function calcularConsumoDeRacao(nome, idade, peso) {
