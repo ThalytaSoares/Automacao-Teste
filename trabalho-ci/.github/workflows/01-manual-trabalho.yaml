@@ -17,6 +17,9 @@ jobs:
     steps:
       # Clone do projeto
       - uses: actions/checkout@v4
+        with:
+        submodules: false
+
 
       # Instalação do Node.js
       - uses: actions/setup-node@v4
@@ -29,7 +32,7 @@ jobs:
 
       # Instalação das dependências
       - name: Instalando Dependências
-        run: yarn
+        run: yarn install --verbose
 
       # Instalação do Playwright
       - name: Instalando Playwright
